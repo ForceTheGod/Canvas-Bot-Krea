@@ -1,0 +1,8 @@
+discord.py
+requests
+nest_asyncio
+numpy
+aiohttp
+beautifulsoup4
+matplotlib
+python-dotenv
