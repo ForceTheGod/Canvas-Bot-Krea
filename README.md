@@ -35,3 +35,11 @@ This repository uses a clean modular structure with Cogs.
 2. Rename `.env.example` to `.env` and fill in your Discord Bot Token:
    `DISCORD_TOKEN=your_token_here`
 3. Run the bot: `python main.py`
+
+## Maintainer
+
+* **Maintained by Haresh** - [ForceTheGod](https://github.com/ForceTheGod)
+
+Feel free to reach out if you have any questions or want to contribute!
+
+* Note that this project is intended for use by students of Krea University. Any other use might result in breaking of code.
