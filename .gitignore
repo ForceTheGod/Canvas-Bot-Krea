@@ -14,6 +14,7 @@ venv.bak/
 # User Data
 users.json
 tracker.json
+submission_history.json
 *.png
 
 # Mac

@@ -6,3 +6,8 @@ aiohttp
 beautifulsoup4
 matplotlib
 python-dotenv
+cryptography
+pillow
+pandas
+seaborn
+scikit-learn

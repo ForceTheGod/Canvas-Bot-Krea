@@ -1,0 +1,16 @@
+{
+    "grade_ping_priority": {
+        "name": "Grade Ping Priority",
+        "description": "Polls Canvas every 2 minutes for 24 hours",
+        "cost": 50,
+        "type": "feature",
+        "duration_hours": 24
+    },
+    "cosmetic_role": {
+        "name": "Cosmetic Roles",
+        "description": "Get 'Top Tier Student' role for 7 days",
+        "cost": 100,
+        "type": "role",
+        "duration_hours": 168
+    }
+}
