@@ -37,6 +37,9 @@ This repository uses a clean modular structure with Cogs.
    `DISCORD_TOKEN=your_token_here`
 3. Run the bot: `python main.py`
 
+## V2 : Gamification system introduced
+
+* **Check out GAMIFICATION_GUIDE.md for more info**
 ## Maintainer
 
 * **Maintained by Haresh** - [ForceTheGod](https://github.com/ForceTheGod)
