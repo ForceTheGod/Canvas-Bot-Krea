@@ -7,6 +7,7 @@ A Discord bot that integrates with the Canvas API, allowing users to securely en
 - Connect your Canvas courses by simply adding a token and an optional base url wrapper.
 - Look up current grades, estimated CGPA, and view recent grade scores.
 - Interactive course selections for Detailed Grades and Course Announcements.
+- Uses hybrid mode of commands - both prefix commands and slash commands.
 - **Live Notifications:** Receive instant DMs whenever a new Announcement is posted or a Grade is scored (complete with class distribution statistics).
 
 ## WorkSpace Setup
