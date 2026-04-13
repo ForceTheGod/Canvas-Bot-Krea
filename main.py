@@ -29,6 +29,11 @@ async def load_cogs():
 @bot.event
 async def setup_hook():
     await load_cogs()
+    try:
+        synced = await bot.tree.sync()
+        print(f"Synced {len(synced)} slash commands!")
+    except Exception as e:
+        print(f"Error syncing commands: {e}")
 
 if __name__ == "__main__":
     bot.run(DISCORD_TOKEN)

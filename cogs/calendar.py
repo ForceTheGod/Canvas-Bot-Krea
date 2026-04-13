@@ -193,7 +193,7 @@ class CalendarCmd(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=["cal", "events", "schedule"])
+    @commands.hybrid_command(aliases=["cal", "events", "schedule"])
     async def calendar(self, ctx):
         """
         View events and assignments from your Canvas Calendar!

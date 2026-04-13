@@ -15,7 +15,7 @@ class Grades(commands.Cog):
             return None
         return user
 
-    @commands.command(aliases=["grade", "scores"])
+    @commands.hybrid_command(aliases=["grade", "scores"])
     async def grades(self, ctx):
         """
         View your current overall grades across all active courses!
@@ -37,7 +37,7 @@ class Grades(commands.Cog):
         
         await ctx.send(msg)
 
-    @commands.command(aliases=["gpa"])
+    @commands.hybrid_command(aliases=["gpa"])
     async def cgpa(self, ctx):
         """
         Calculate an estimated CGPA based on your current Canvas grades!
@@ -63,7 +63,7 @@ class Grades(commands.Cog):
         
         await ctx.send(embed=embed)
 
-    @commands.command(aliases=["extremes", "extreme"])
+    @commands.hybrid_command(aliases=["extremes", "extreme"])
     async def maxmin(self, ctx):
         """
         View your highest and lowest graded courses!

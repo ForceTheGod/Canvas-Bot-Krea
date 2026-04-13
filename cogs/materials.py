@@ -81,7 +81,7 @@ class Materials(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=["syl", "course_summary"])
+    @commands.hybrid_command(aliases=["syl", "course_summary"])
     async def syllabus(self, ctx):
         """
         Pull the syllabus text / course summary for a specific course.
@@ -103,7 +103,7 @@ class Materials(commands.Cog):
         await msg.edit(content="📚 **Select a course to view its Official Syllabus:**", view=view)
 
 
-    @commands.command(aliases=["search", "files"])
+    @commands.hybrid_command(aliases=["search", "files"])
     async def find(self, ctx, *, keyword: str = None):
         """
         Search through course files instantaneously!

@@ -8,7 +8,7 @@ class Todo(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=["todo", "due"])
+    @commands.hybrid_command(aliases=["todo", "due"])
     async def whats_due(self, ctx):
         """
         Snapshot of your workload directly in Discord!

@@ -74,7 +74,7 @@ class Setup(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=["token", "login"])
+    @commands.hybrid_command(aliases=["token", "login"])
     async def settoken(self, ctx, token: str = None, base_url: str = "https://canvas.krea.edu.in"):
         """
         Save your canvas API token and url to use the bot.
@@ -95,7 +95,7 @@ class Setup(commands.Cog):
         set_user(ctx.author.id, token, base_url)
         await ctx.send("✅ Your token has been saved successfully! You can now use the bot commands.")
 
-    @commands.command(aliases=["logout", "remove_token"])
+    @commands.hybrid_command(aliases=["logout", "remove_token"])
     async def cleartoken(self, ctx):
         """
         Remove your canvas API token from the bot's database.
@@ -106,7 +106,7 @@ class Setup(commands.Cog):
         else:
             await ctx.send("⚠️ You don't have a token saved in my database.")
 
-    @commands.command(aliases=["notifs", "alerts", "ping"])
+    @commands.hybrid_command(aliases=["notifs", "alerts", "ping"])
     async def notifications(self, ctx):
         """
         Interactive dashboard to toggle Annoucement & Grade Background Alerts.
@@ -124,7 +124,7 @@ class Setup(commands.Cog):
         view = NotifView(ctx.author.id, ann_state, grade_state)
         await ctx.send(embed=embed, view=view)
 
-    @commands.command(aliases=["token_help", "howtotoken"])
+    @commands.hybrid_command(aliases=["token_help", "howtotoken"])
     async def tokenhelp(self, ctx):
         """
         Get step-by-step instructions on how to generate an API token from Canvas.

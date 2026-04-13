@@ -123,7 +123,7 @@ class Courses(commands.Cog):
             return None
         return user
 
-    @commands.command(aliases=["announcements"])
+    @commands.hybrid_command(aliases=["announcements"])
     async def announcement(self, ctx):
         """
         View the latest 3 announcements for a specific course!
@@ -142,7 +142,7 @@ class Courses(commands.Cog):
 
         await ctx.send("📚 **Select a course to view announcements:**", view=view)
 
-    @commands.command(aliases=["details", "grades_details"])
+    @commands.hybrid_command(aliases=["details", "grades_details"])
     async def grade_details(self, ctx):
         """
         Select a course to view detailed grades by assignment categories!
